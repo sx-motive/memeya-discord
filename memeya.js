@@ -21,7 +21,7 @@ client.on("message", message => {
     // ping
     if (command === "ping") {
         const timeTaken = Date.now() - message.createdTimestamp;
-        message.reply(`Pong! This message had a latency of ${timeTaken}ms.`);               
+        message.reply(`Pong! Your message had a latency of ${timeTaken}ms.`);               
     }
 
     // calc
@@ -37,7 +37,7 @@ client.on("message", message => {
     }
 
     // wallpapers
-    else if (command === "wallpapers start") {
+    else if (command === "wallpapers") {
         setInterval(() => 
         redditImageFetcher.fetch({
             type: 'wallpaper',
@@ -49,7 +49,8 @@ client.on("message", message => {
             })}), 5000);
 
     }
-    else if (command === "memes start") {
+
+    else if (command === "memes") {
         setInterval(() => 
         redditImageFetcher.fetch({
             type: 'meme',
