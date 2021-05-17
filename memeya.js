@@ -46,7 +46,7 @@ client.on("message", message => {
             result => { 
                 result.map(function(result){
                 message.reply(`@everyone ${result.image}`);
-            })}), 100000);
+            })}), 5000);
 
     }
     else if (command === "memes start") {
@@ -58,7 +58,7 @@ client.on("message", message => {
             result => { 
                 result.map(function(result){
                 message.reply(`@everyone ${result.image}`);
-            })}), 100000);
+            })}), 5000);
     }
 
 });   
