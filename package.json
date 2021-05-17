@@ -4,12 +4,13 @@
   "description": "motive's bot for discord",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node memeya.js"
   },
   "author": "motive",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^12.5.3",
+    "dotenv": "^9.0.2",
     "nodemon": "^2.0.7",
     "reddit-image-fetcher": "^2.0.7"
   }

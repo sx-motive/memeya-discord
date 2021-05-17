@@ -1,5 +1,7 @@
+require('dotenv').config()
+
 const Discord = require("discord.js");
-const config = require("./config.json");
+
 const redditImageFetcher = require('reddit-image-fetcher');
 
 const client = new Discord.Client();
@@ -55,11 +57,8 @@ client.on("message", message => {
                 result.map(function(result){
                 message.reply(`@everyone ${result.image}`);
             })}), 100000);
-
     }
 
 });   
 
-
-
-client.login(config.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);
