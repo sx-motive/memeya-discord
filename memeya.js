@@ -46,7 +46,7 @@ client.on("message", message => {
             result => { 
                 result.map(function(result){
                 message.reply(`@everyone ${result.image}`);
-            })}), 5000);
+            })}), 55000);
 
     }
 
@@ -59,7 +59,7 @@ client.on("message", message => {
             result => { 
                 result.map(function(result){
                 message.reply(`@everyone ${result.image}`);
-            })}), 5000);
+            })}), 55000);
     }
 
 });   
