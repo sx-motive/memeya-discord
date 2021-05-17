@@ -2,9 +2,10 @@
   "name": "memeya-discord",
   "version": "1.0.0",
   "description": "motive's bot for discord",
-  "main": "index.js",
+  "main": "memeya.js",
   "scripts": {
-    "start": "node memeya.js"
+    "start": "node memeya.js",
+    "devStart": "nodemon memeya.js"
   },
   "author": "motive",
   "license": "ISC",

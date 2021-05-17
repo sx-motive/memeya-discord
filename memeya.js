@@ -1,11 +1,13 @@
 require('dotenv').config()
-
 const Discord = require("discord.js");
-
 const redditImageFetcher = require('reddit-image-fetcher');
 
 const client = new Discord.Client();
-const prefix = "_";
+const prefix = "!";
+
+client.on("ready", () => {
+    console.log("Memeya is woke up!")
+})
 
 client.on("message", message => { 
 
@@ -61,4 +63,4 @@ client.on("message", message => {
 
 });   
 
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN)
